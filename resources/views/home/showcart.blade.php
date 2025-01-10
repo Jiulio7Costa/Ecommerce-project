@@ -184,7 +184,7 @@
 <div style="text-align: center; margin-top: 20px;">
    <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 36px; color: #333;">Proceed to Order</h1>
    <a href="{{ url('cash_order') }}" class="btn btn-danger" style="margin: 10px; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 14px;">Cash On Delivery</a>
-   <a href="{{ url('pay_using_card') }}" class="btn btn-danger" style="margin: 10px; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 14px;">Pay Using Card</a>
+   <a href="{{ url('stripe',$totalprice) }}" class="btn btn-danger" style="margin: 10px; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 14px;">Pay Using Card</a>
 </div>
 
 
