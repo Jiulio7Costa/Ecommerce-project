@@ -95,6 +95,13 @@
         <div class="content-wrapper">
           <div class="div_center">
             <h2 class="h2_font">All Orders</h2>
+            <div>
+              <form action="{{url('search')}}" method="get">
+                @csrf
+                <input type="text" style="color: black" name="search" placeholder="Search for something">
+                <input type="submit" value="Search" class="btn btn-outline-primary">
+              </form>
+            </div>
             <div class="table-container">
               <table>
                 <thead>
@@ -116,7 +123,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @foreach($order as $order)
+                  @forelse($order as $order)
                   <tr>
                     <td>{{$order->name}}</td>
                     <td>{{$order->email}}</td>
@@ -143,7 +150,16 @@
                     <td>
                       <a href="{{url('print_pdf',$order->id)}}" class="btn btn-info">Print PDF</a>
                   </tr>
-                  @endforeach
+                  @empty
+
+                  <tr>
+                    <td colspan="16">
+                      No Data Found
+                    </td>
+                  </tr>
+
+                  
+                  @endforelse
                 </tbody>
               </table>
             </div>
