@@ -35,12 +35,12 @@
                   <a class="nav-link" href="{{url('show_order')}}">Order</a>
                </li>
 
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
+               <form class="form-inline" action="{{ url('product_search1') }}" method="get">
+                  <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
-               </form>
-
+                </form>
+                
                @if (Route::has('login'))
                @auth
                <li class="nav-item">

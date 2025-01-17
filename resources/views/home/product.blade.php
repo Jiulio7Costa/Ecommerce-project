@@ -4,6 +4,28 @@
             <h2 style="font-size: 36px; color: #333;">
                 Our Products
             </h2>
+
+            <div style="display: flex; justify-content: center; margin: 1rem 0;">
+                <form action="{{url('product_search')}}" method="GET" style="display: flex; gap: 0.5rem;">
+                    @csrf
+                    <input 
+                        type="text" 
+                        name="search" 
+                        placeholder="Search for a product" 
+                        style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; box-sizing: border-box; height: 40px;" 
+                        aria-label="Search for a product"
+                    >
+                    <button 
+                        type="submit" 
+                        style="padding: 0 1rem; background-color: #007bff; color: #fff; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; height: 40px; display: flex; align-items: center; justify-content: center;"
+                    >
+                        Search
+                    </button>
+                </form>
+            </div>
+            
+
+
         </div>
         <div class="row">
             @foreach($product as $products)

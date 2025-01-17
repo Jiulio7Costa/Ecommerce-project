@@ -269,4 +269,25 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function product_search(Request $request)
+    {
+        $search_text=$request->search;
+        $product=product::where('title','LIKE',"%$search_text%")->orWhere('category','LIKE',"%$search_text%")->orWhere('description','LIKE',"%$search_text%")->paginate(9);
+        return view('home.userpage',compact('product'));
+
+    }
+    public function product_search1(Request $request)
+    {
+        $search_text = $request->search;
+    
+        $products = Product::where('title', 'LIKE', "%$search_text%")
+                    ->orWhere('category', 'LIKE', "%$search_text%")
+                    ->orWhere('description', 'LIKE', "%$search_text%")
+                    ->paginate(9);
+    
+        return view('home.products', compact('products'));
+    }
+    
+    
+
 }
