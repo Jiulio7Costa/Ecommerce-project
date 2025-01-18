@@ -12,12 +12,12 @@
       <link rel="shortcut icon" href="images/favicon.png" type="">
       <title>Order Details</title>
       <!-- Bootstrap core CSS -->
-      <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
+      <link rel="stylesheet" type="text/css" href="{{asset('home/css/bootstrap.css')}}" />
       <!-- Font Awesome -->
-      <link href="home/css/font-awesome.min.css" rel="stylesheet" />
+      <link href="{{asset('home/css/font-awesome.min.css')}}" rel="stylesheet" />
       <!-- Custom Styles -->
-      <link href="home/css/style.css" rel="stylesheet" />
-      <link href="home/css/responsive.css" rel="stylesheet" />
+      <link href="{{asset('home/css/style.css')}}" rel="stylesheet" />
+      <link href="{{asset('home/css/responsive.css')}}" rel="stylesheet" />
       <style>
          body {
             font-family: 'Arial', sans-serif;
@@ -133,9 +133,9 @@
       </div>
 
       <!-- Scripts -->
-      <script src="home/js/jquery-3.4.1.min.js"></script>
-      <script src="home/js/popper.min.js"></script>
-      <script src="home/js/bootstrap.js"></script>
-      <script src="home/js/custom.js"></script>
+      <script src="{{asset('home/js/jquery-3.4.1.min.js')}}"></script>
+      <script src="{{asset('home/js/popper.min.js')}}"></script>
+      <script src="{{asset('home/js/bootstrap.js')}}"></script>
+      <script src="{{asset('home/js/custom.js')}}"></script>
    </body>
 </html>

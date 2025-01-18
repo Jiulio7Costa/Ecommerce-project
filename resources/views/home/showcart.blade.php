@@ -7,13 +7,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
    <title>Cart - Famms</title>
    <!-- Bootstrap core CSS -->
-   <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
+   <link rel="stylesheet" type="text/css" href="{{asset('home/css/bootstrap.css')}}" />
    <!-- Font Awesome -->
-   <link href="home/css/font-awesome.min.css" rel="stylesheet" />
+   <link href="{{asset('home/css/font-awesome.min.css')}}" rel="stylesheet" />
    <!-- Custom styles -->
-   <link href="home/css/style.css" rel="stylesheet" />
+   <link href="{{asset('home/css/style.css')}}" rel="stylesheet" />
    <!-- Responsive styles -->
-   <link href="home/css/responsive.css" rel="stylesheet" />
+   <link href="{{asset('home/css/responsive.css')}}" rel="stylesheet" />
    <style>
       body {
          background-color: #f5f5f5;
@@ -198,12 +198,12 @@
    
 
    <!-- jQuery -->
-   <script src="home/js/jquery-3.4.1.min.js"></script>
+   <script src="{{asset('home/js/jquery-3.4.1.min.js')}}"></script>
    <!-- Popper JS -->
-   <script src="home/js/popper.min.js"></script>
+   <script src="{{asset('home/js/popper.min.js')}}"></script>
    <!-- Bootstrap JS -->
-   <script src="home/js/bootstrap.js"></script>
+   <script src="{{asset('home/js/bootstrap.js')}}"></script>
    <!-- Custom JS -->
-   <script src="home/js/custom.js"></script>
+   <script src="{{asset('home/js/custom.js')}}"></script>
 </body>
 </html>

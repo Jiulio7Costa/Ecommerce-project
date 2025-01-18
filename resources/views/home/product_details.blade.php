@@ -93,7 +93,6 @@
             margin-top: 20px;
          }
       </style>
-      <base href="/public">
       <!-- Basic -->
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -106,13 +105,13 @@
       <link rel="shortcut icon" href="images/favicon.png" type="image/png">
       <title>Famms - Fashion HTML Template</title>
       <!-- bootstrap core css -->
-      <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
+      <link rel="stylesheet" type="text/css" href="{{asset('home/css/bootstrap.css')}}" />
       <!-- font awesome style -->
-      <link href="home/css/font-awesome.min.css" rel="stylesheet" />
+      <link href="{{asset('home/css/font-awesome.min.css')}}" rel="stylesheet" />
       <!-- Custom styles for this template -->
-      <link href="home/css/style.css" rel="stylesheet" />
+      <link href="{{asset('home/css/style.css')}}" rel="stylesheet" />
       <!-- responsive style -->
-      <link href="home/css/responsive.css" rel="stylesheet" />
+      <link href="{{asset('home/css/responsive.css')}}" rel="stylesheet" />
    </head>
    <body>
       <div class="hero_area">
@@ -121,7 +120,7 @@
          <!-- Product Details Section -->
          <div class="container text-center py-5">
             <div class="img-box mb-4">
-               <img src="product/{{$product->image}}" 
+               <img src="/product/{{$product->image}}" 
                     alt="{{$product->title}}">
             </div>
             <h5 style="font-size: 20px; color: #333; margin-bottom: 15px;">{{$product->title}}</h5>
@@ -212,10 +211,10 @@
             </p>
          </div>
          <!-- Scripts -->
-         <script src="home/js/jquery-3.4.1.min.js"></script>
-         <script src="home/js/popper.min.js"></script>
-         <script src="home/js/bootstrap.js"></script>
-         <script src="home/js/custom.js"></script>
+         <script src="{{asset('home/js/jquery-3.4.1.min.js')}}"></script>
+         <script src="{{asset('home/js/popper.min.js')}}"></script>
+         <script src="{{asset('home/js/bootstrap.js')}}"></script>
+         <script src="{{asset('home/js/custom.js')}}"></script>
       </div>
    </body>
 </html>
