@@ -150,12 +150,12 @@
          </div>
       </div>
       <!-- jQuery -->
-      <script src="{{assets('home/js/jquery-3.4.1.min.js')}}"></script>
+      <script src="{{asset('home/js/jquery-3.4.1.min.js')}}"></script>
       <!-- popper js -->
-      <script src="{{assets('home/js/popper.min.js')}}"></script>
+      <script src="{{asset('home/js/popper.min.js')}}"></script>
       <!-- bootstrap js -->
-      <script src="{{assets('home/js/bootstrap.js')}}"></script>
+      <script src="{{asset('home/js/bootstrap.js')}}"></script>
       <!-- custom js -->
-      <script src="{{assets('home/js/custom.js')}}"></script>
+      <script src="{{asset('home/js/custom.js')}}"></script>
    </body>
 </html>
